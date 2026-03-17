@@ -111,28 +111,3 @@ Encryption: C = M^e mod n
 
 Decryption: M = C^d mod n
 
-▶️ How to Run
-1. Install dependencies
-pip install pycryptodome cryptography
-2. Run the script
-python your_script_name.py
-
-📂 Files Generated
-File	Description
-public_key.txt	RSA public key
-private_key.txt	RSA private key
-session_key.txt	Shared key from Diffie-Hellman
-
-Notes
-
-This project is for educational purposes only
-
-RSA is used without padding → not secure in real-world systems
-
-AES-CTR requires nonce uniqueness for security
-
-Replay protection is implemented using:
-
-Timestamp
-
-Message nonce
